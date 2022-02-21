@@ -1,12 +1,15 @@
 <script setup>
-  let description = 'Description ...';
+  import ecomUtils from '@ecomplus/utils/dist/ecom-utils.node.min';
+  import ecomClient from '@ecomplus/client/dist/ecom-client.node.js';
+
+  let description = 'Mocked description ...';
   if (process.server) {
-    description = await new Promise((resolve) => {
-      console.log('Loading description...');
-      setTimeout(() => {
-        resolve('<h1>Hello Nuxt 3</h1><h3>Storefront PoC With Vue 3</h3>');
-      }, 200);
+    console.log('Loading product description ...');
+    ecomUtils.$ecomConfig.set('store_id', 1024);
+    const { data } = await ecomClient.store({
+      url: '/products/5d09197e24607a6a42d7140d',
     });
+    description = data.body_html;
   }
 </script>
 

@@ -6,10 +6,12 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "nuxt3": "latest"
+    "nuxt3": "latest",
+    "sass": "^1.49.8"
   },
   "dependencies": {
     "@ecomplus/client": "^2.2.1",
-    "@ecomplus/utils": "^1.4.1"
+    "@ecomplus/utils": "^1.4.1",
+    "@storefront-ui/vue": "^0.12.1"
   }
 }

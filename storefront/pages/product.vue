@@ -1,5 +1,4 @@
 <template>
-<SfHeading title="Hello!"/>
 <div>
   <ServerContent/>
   <hr>

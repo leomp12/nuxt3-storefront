@@ -2,17 +2,16 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev -o",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "nuxt": "^3.0.0-rc.1",
-    "sass": "^1.49.8"
+    "nuxt": "^3.0.0-rc.4",
+    "sass": "^1.52.3"
   },
   "dependencies": {
-    "@ecomplus/client": "^2.2.1",
-    "@ecomplus/utils": "^1.4.1"
+    "@cloudcommerce/api": "0.0.8"
   }
 }
